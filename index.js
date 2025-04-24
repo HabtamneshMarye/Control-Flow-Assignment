@@ -53,7 +53,7 @@ const customerAge=(age)=>{
   const ages=[20, 25, 18, 17, 23];
   customerAge(ages);
   
-  //4.Write a program using a while loop that simulates a countdown of lives in a game 
+//4.Write a program using a while loop that simulates a countdown of lives in a game 
   
   const livesCount=()=>{
     let lives=5;
@@ -65,7 +65,7 @@ const customerAge=(age)=>{
     livesCount();
     console.log("Game over");
     
-  //5.write a program that loops through an array of user feedback
+//5.write a program that loops through an array of user feedback
   
   function processOfUser(userFeedback){
     let i=0;
@@ -83,7 +83,7 @@ const customerAge=(age)=>{
   const feedback=["excellent custom product", "No more feedback to processs"];
   processOfUser(feedback);
   
-  //6.Write a program that loops through an array of user login statuses
+//6.Write a program that loops through an array of user login statuses
   
   function processOfLogin(loginStatus){
     let i=0;
@@ -100,26 +100,27 @@ const customerAge=(age)=>{
   const userStatues=["logged in", "logged out"];
   processOfLogin(userStatues);
   
-  //7.Write a program that processes an array of support ticket priorities using a switch statement
+//7.Write a program that processes an array of support ticket priorities using a switch statement
   
-  function processOfTickets(ticket){
-    for(let i=0; i<ticket.length; i++){
-      const priority=ticket[i];
-      switch(priority){
-      case "high":
-      console.log(`Tickets ${i+1} (priority:${priority}): Address immediately`);
-      break;
+function processOfTickets(ticket){
+  for(let i=0; i<ticket.length; i++){
+    const priority=ticket[i];
+    switch(priority){
+    case "high":
+    console.log(`Tickets ${i+1} (priority:${priority}): Address immediately`);
+    break;
   
-      case "medium":
-      console.log(`Tickets ${i+1} (priority:${priority}): Address within 5 hours`);
-      break;
+    case "medium":
+    console.log(`Tickets ${i+1} (priority:${priority}): Address within 5 hours`);
+    break;
   
-      case "low":
-      console.log(`Tickets ${i+1} (priority:${priority}): Address within 24 hours`);
-      break;
-      default:
+    case "low":
+    console.log(`Tickets ${i+1} (priority:${priority}): Address within 24 hours`);
+    break;
+    default:
   
-      console.log(`Tickets ${i+1} (priority:${priority}): Invalid priority!`);
+    console.log(`Tickets ${i+1} (priority:${priority}): Invalid priority!`);
+    break;
       }
     }
   }
@@ -127,7 +128,7 @@ const customerAge=(age)=>{
   const ticketQueue=["high", "medium", "low", "invalid"];
   processOfTickets(ticketQueue);
   
-  //8.Create a while loop that simulates a quiz countdown from 10 seconds, printing each number until it reaches 0.
+//8.Create a while loop that simulates a quiz countdown from 10 seconds, printing each number until it reaches 0.
   const countDown=()=>{
     let timeCount=10;
     while (timeCount >= 0){
